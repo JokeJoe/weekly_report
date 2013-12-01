@@ -14,7 +14,7 @@ weakly_report
 * 忙的话就将任意内容的txt格式文件提交到这里
 
 ##常规任务
-* 初学学 Python 的同学可以每周提交 [learn python the hard way][] 的练习题。
+* 初学 Python 的同学可以每周提交 [learn python the hard way][2] 的练习题。
 * （待补充）
 
 
