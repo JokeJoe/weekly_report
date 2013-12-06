@@ -26,7 +26,7 @@
 stable/havana 的测试是跑不过的。而且可能有其他bug https://bugs.launchpad.net/horizon/+bug/1210253
 
 ###参考 
-[Horizon Quickstart][http://docs.openstack.org/developer/horizon/quickstart.html]
+* [Horizon Quickstart](http://docs.openstack.org/developer/horizon/quickstart.html)
 
 ## 安装 keystone
 ###步骤
@@ -81,7 +81,7 @@ token 类型改为 UUID
 * 到了这一步，还没好 T_T 下面还要装 glance 和 nova
 	
 ###参考
-[Installing Keystone][http://docs.openstack.org/developer/keystone/setup.html]
-[openStack Keystone安装部署流程][http://www.cnblogs.com/fczjuever/p/3278072.html]
-[Horizon Keystone EmptyCatalog The service catalog is empty][http://fosshelp.blogspot.com/2013/05/horizon-keystone-emptycatalog-service.html]
+* [Installing Keystone](http://docs.openstack.org/developer/keystone/setup.html)
+* [openStack Keystone安装部署流程](http://www.cnblogs.com/fczjuever/p/3278072.html)
+* [Horizon Keystone EmptyCatalog The service catalog is empty](http://fosshelp.blogspot.com/2013/05/horizon-keystone-emptycatalog-service.html)
 
