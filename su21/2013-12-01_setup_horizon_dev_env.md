@@ -1,4 +1,32 @@
-#搭建 Horizon 开发环境 Debian 版本
+#在我们的havana上搭建 Horizon 开发环境 
+
+##前置条件
+1. 假设你在那台叫havana的机器有帐号 和 root 权限
+2. 假设你有那台 `win server 2003` 的帐号
+
+##步骤
+
+将 `/home/su21/horizon/` 整个目录拷贝到自己的home目录，并且修改文件的用户和组
+
+	# cp /home/su21/horizon $HOME/ -R
+	# chown  $USER:$USER $HOME/horizon/ -R
+
+修改虚拟环境文件一些写死的路径，
+例如 `/home/su21/horizon/.venv` 改为 `/home/<YOUR_USER_NAME>/horizon/venv`
+	
+	$ cd $HOME/horizon/.venv/bin/
+	$ sed -i /s/su21/<YOUR_USER_NAME>/ *
+
+激活虚拟环境，运行 horizon
+	
+	$ source $HOME/horizon/venv/bin/
+	$ cd $HOME/horizon
+	$ ./manage.py runserver 0.0.0.0:<PORT>
+
+接下来可以远程桌面到那台win，访问 `http://192.168.2.104:<PORT>/`
+
+
+#从零开始搭建 Horizon 开发环境 Debian 版本
 
 ##前置条件
 1. 假设已经安装好了 mysql 
