@@ -4,7 +4,7 @@
 1. 假设你在那台叫havana的机器有帐号 和 root 权限
 2. 假设你有那台 `win server 2003` 的帐号
 
-##步骤
+##安装步骤
 
 将 `/home/su21/horizon/` 整个目录拷贝到自己的home目录，并且修改文件的用户和组
 
@@ -24,6 +24,11 @@
 	$ ./manage.py runserver 0.0.0.0:<PORT>
 
 接下来可以远程桌面到那台win，访问 `http://192.168.2.104:<PORT>/`
+
+##开发
+horizon 目录本身就是一个git的版本仓库，
+可以从`master` 分出一些分支，在自己的分支上开发，
+功能完善后，再merge会master分支，再推到公共的版本仓库。
 
 
 #从零开始搭建 Horizon 开发环境 Debian 版本
