@@ -15,7 +15,7 @@
 例如 `/home/su21/horizon/.venv` 改为 `/home/<YOUR_USER_NAME>/horizon/venv`
 	
 	$ cd $HOME/horizon/.venv/bin/
-	$ sed -i /s/su21/<YOUR_USER_NAME>/ *
+	$ sed -i s/su21/<YOUR_USER_NAME>/ *
 
 激活虚拟环境，运行 horizon
 	
